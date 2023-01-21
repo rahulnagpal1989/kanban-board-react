@@ -7,9 +7,7 @@ import {applyPolyfills, defineCustomElements} from 'h8k-components/loader';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <React.StrictMode>
     <App />
-  // </React.StrictMode>
 );
 applyPolyfills().then(() => {
   defineCustomElements(window);
