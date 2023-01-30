@@ -29,14 +29,14 @@ export default function KanbanBoard(props) {
 	const moveToBack = (task) => {
 		if(task.stage!==0) {
 			task.stage--;
-			setTasks([...tasks], task);
+			setTasks([...tasks]);
 		}
 	};
 
 	const moveToForward = (task) => {
 		if(task.stage!==stagesNames.length-1) {
 			task.stage++;
-			setTasks([...tasks], task);
+			setTasks([...tasks]);
 		}
 	};
 
